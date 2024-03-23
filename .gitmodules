@@ -2,3 +2,7 @@
 	path = demo-kg-build
 	url = https://github.com/wey-gu/demo-kg-build.git
 	shallow = true
+[submodule "instagraph"]
+	path = instagraph
+	url = https://github.com/yoheinakajima/instagraph.git
+	shallow = true
