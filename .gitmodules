@@ -1,0 +1,4 @@
+[submodule "demo-kg-build"]
+	path = demo-kg-build
+	url = https://github.com/wey-gu/demo-kg-build.git
+	shallow = true
