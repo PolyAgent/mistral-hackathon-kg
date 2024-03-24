@@ -17,7 +17,7 @@ def get_entity_pairs(doc, labels, model):
   return entity_pairs, entities
 
 # Create a connection to the MongoDB database
-client = MongoClient("mongodb+srv://mistral_hackathon:vPzc3prjC6H1EoQB@age-house.dypq7r5.mongodb.net/")
+client = MongoClient(os.environ["MONGODB_URI"])
 db = client.arxiv.papers_for_review
 
 # available models: https://huggingface.co/urchade
@@ -110,7 +110,7 @@ Given the specified VOCABULARY for subjects and objects, the list of ENTITIES le
 {"subject": "The Transformer", "predicate": "is topic", "object": "Research Paper"}
 {"subject": "The Transformer", "predicate": "uses", "object": "large training data"},
 """
-api_key = os.getenv("MISTRAL_API_KEY")
+api_key = os.environ["MISTRAL_API_KEY"]
 
 client = MistralClient(api_key=api_key)
 
