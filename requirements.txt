@@ -133,3 +133,4 @@ wrapt==1.16.0
 yarl==1.9.4
 yfiles_jupyter_graphs==1.6.2
 langchain_anthropic
+pymongo
